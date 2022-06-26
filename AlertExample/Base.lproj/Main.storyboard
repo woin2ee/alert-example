@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cNe-42-F8i">
-                                <rect key="frame" x="124" y="337.5" width="166" height="50"/>
+                                <rect key="frame" x="124" y="382.5" width="166" height="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Show Alert">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -27,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNC-uB-vgH">
-                                <rect key="frame" x="76" y="428" width="262.5" height="50"/>
+                                <rect key="frame" x="76" y="473.5" width="262.5" height="50"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Show ActionSheet">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
@@ -41,10 +41,42 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oNC-uB-vgH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="561-ac-1eL"/>
-                            <constraint firstItem="cNe-42-F8i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="9De-Vd-8kj"/>
+                            <constraint firstItem="cNe-42-F8i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.9" id="9De-Vd-8kj"/>
+                            <constraint firstItem="oNC-uB-vgH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="1.4" id="EV5-Yj-OjO"/>
                             <constraint firstItem="cNe-42-F8i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WKw-jA-ZMI"/>
-                            <constraint firstItem="oNC-uB-vgH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="m7I-9i-r7h"/>
+                            <constraint firstItem="oNC-uB-vgH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="ceR-Tm-Kmv"/>
+                            <constraint firstItem="cNe-42-F8i" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="lu8-nP-Oqn"/>
+                            <constraint firstItem="oNC-uB-vgH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.1" id="m7I-9i-r7h"/>
+                            <constraint firstItem="cNe-42-F8i" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" multiplier="0.6" id="vJl-Pz-xN9"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9De-Vd-8kj"/>
+                                <exclude reference="WKw-jA-ZMI"/>
+                                <exclude reference="lu8-nP-Oqn"/>
+                                <exclude reference="vJl-Pz-xN9"/>
+                                <exclude reference="561-ac-1eL"/>
+                                <exclude reference="EV5-Yj-OjO"/>
+                                <exclude reference="ceR-Tm-Kmv"/>
+                                <exclude reference="m7I-9i-r7h"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="lu8-nP-Oqn"/>
+                                <include reference="vJl-Pz-xN9"/>
+                                <include reference="EV5-Yj-OjO"/>
+                                <include reference="ceR-Tm-Kmv"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="9De-Vd-8kj"/>
+                                <include reference="WKw-jA-ZMI"/>
+                                <include reference="561-ac-1eL"/>
+                                <include reference="m7I-9i-r7h"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
